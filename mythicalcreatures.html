@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The many different kinds of Mythical Creatures</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f9;
+            --text-color: #333;
+            --box-bg: white;
+            --btn-color: #4CAF50;
+        }
+
+        body.dark-mode {
+            --bg-color: #1a1a1a;
+            --text-color: #f4f4f9;
+            --box-bg: #2d2d2d;
+            --btm-color: #2e7d32;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-color) !important;
+            color: var(--text-color);
+            font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            /* This makes it fade smoother*/
+            padding: 50px;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* --- DROPDOWN STYLES --- */
+        /* this container holds both the button and the hidden menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+
+        /*style for the 'folder' button */
+        .dropbtn {
+            background-color: var(--btn-color);
+            color: white;
+            padding: 16px 24px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        /* This hides the menu by default*/
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: var(--box-bg);
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            /* Centres the menu under the button */
+            border-radius: 4px;
+        }
+
+        /* Styling the links inside the dropdown */
+        .dropdown-content a {
+            color: var(--text-color);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        /* Hover effect for links */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: #000 !important;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        /* --- CONTENT STYLING --- */
+        .creature-box {
+            display: none;
+            /* this keeps them hidden at first */
+            background-color: var(--box-bg);
+            margin: 100px auto;
+            padding: 30px;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        #home-page {
+            display: block;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        img {
+            border-radius: 8px;
+            margin-top: 20px;
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* Styling for the Back to Top button*/
+        .back-to-top {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stays in the same place on the screen*/
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            background-color: var(--btn-color);
+            /* Matches the green menu button */
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            /* Makes it circular */
+            font-size: 20px;
+            box-shadow: 0 4px 8px rgba(0, o, o, o.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="home-page">
+        <!-- Title and Description-->
+        <header>
+            <h1>World of Mythical Creatures</h1>
+            <br>
+            <p>Welcome to the mythicla creatures archive. Here, you can explore the legends
+                <br>
+                and stories of the many different kinds of Mythical creatures from all mythologies,
+                <br>
+                religions, and faiths. this website is for those who have an interest in studying
+                <br>
+                mythological creatures and understanding why people believed in them. Below this,
+                <br>
+                is a drop down menu with the different kinds of mythological creatures you can research
+                <br>
+                on, and if you want more, there are links to more information provided on the specific
+                <br>
+                mythical creature.
+            </p>
+
+        </header>
+        <img src="https://c8.alamy.com/comp/FXCKKP/mythical-creatures-infographics-FXCKKP.jpg"
+            alt="Mythical Creatures Banner"
+            style="width: 100%; max-width: 800px; border-radius: 12px; margin-top: 20px;">
+
+        <section style="margin-top: 40px; text-align: left;">
+            <h2>About This Archive</h2>
+            <p style="font-size: 1.2em; line-height: 1.6;">
+                Mythical creatures appear in stories from every culture on Earth. Some were created to explain
+                <br>
+                natural disasters, some to teach moral lessons and others simply to spak imagination.
+            </p>
+
+            <ul style="font-size: 1.1em; line-height:1.8;">
+                <li>Learn the origins of famous creatures</li>
+                <li>Compare myths across cultures</li>
+                <li>Discover how stories changed over time</li>
+                <li>Follow links to deeper research</li>
+                <li>Explore creatures visually through images and descriptions</li>
+            </ul>
+        </section>
+
+        <section style="margin-top: 40px; text-align: left;">
+            <h2>How to explore</h2>
+            <p style="font-size: 1.2em; line-height: 1.6;">
+                this archive is simple to navigate:
+            </p>
+            <ul style="font-size: 1.1em; line-height: 1.8;">
+                <li>Open the dropdown menu to choose a creature</li>
+                <li>Each creature page includes a description, image, and research leaks</li>
+                <li>Use the back to top button to navigate quickly</li>
+                <li>Switch between light and dark mode anytime</li>
+            </ul>
+        </section>
+    </div>
+
+    <button id="theme-toggle" class="dropbtn" style="margin-bottom: 10px" ;>🌙 Dark Mode</button>
+
+    <!-- Dropdown "folder" of creatures -->
+    <div class="dropdown">
+        <!-- Added onclick here -->
+        <button class="dropbtn" onclick="toggleMenu()">📁 Mythical Creatures Menu </button>
+        <!-- Added id="myDropdown" here-->
+        <div id="myDropdown" class="dropdown-content">
+            <a onclick="showCreature('home-page')">🏠 Home</a>
+            <a onclick="showCreature('kraken')">The Kraken</a>
+            <a onclick="showCreature('lochness')">The loch ness monster</a>
+            <a onclick="showCreature('giants')">Giants</a>
+            <a onclick="showCreature('djinn')">A Djinn</a>
+            <a onclick="showCreature('hydra')">The hydra</a>
+            <a onclick="showCreature('chimera')">The Chimera</a>
+            <a onclick="showCreature('manticore')">The Manticore</a>
+            <a onclick="showCreature('mermaid')">The Mermaid</a>
+            <a onclick="showCreature('seaserpent')">The Sea Serpent</a>
+            <a onclick="showCreature('harpy')">The Harpy</a>
+        </div>
+    </div>
+    <!-- 1. Kraken -->
+    <div class="creature-box" id="kraken">
+        <h2>1. The Kraken</h2>
+        <p style="font-size: 1.2em;">The Kraken is a mythological creature of Scandinavian folklore.
+            <br>
+            Typically described as a giant sea monster that resembles an octopus or squid,
+            <br>
+            it is said to dwell off the coasts of Norway and Greenland.
+        </p>
+        <a href="https://www.britannica.com/topic/kraken" target="_blank">Read more about the Kraken</a>
+        <br>
+        <img src="https://static.wikia.nocookie.net/cryptidz/images/0/0a/Kraken.jpg" alt="Kraken" width="500">
+    </div>
+    <!-- 2. Loch Ness -->
+    <div class="creature-box" id="lochness">
+        <h2>2. The loch ness monster</h2>
+        <br>
+        <br>
+        <p style="font-size: 1.2em;">
+        <p> the loch ness monster, is a legendary myth in the loch ness, in scotland. it has been a
+            legend
+            for a good
+            two thousand plus years,
+            <br>
+            due to a picture shown online, by a person who was taking a picture and a video of the loch.
+            they had
+            thought they had caught
+            <br>
+            sight of some large extinct underwater creature dating back to the dinosaur times. There are
+            also
+            <br>
+            the first written account was by a man names st. columba. for more information, you can
+            click on
+            the link
+            <br>
+            provided below for more information.
+        </p>
+        <br>
+        <br>
+        <a href="https://www.britannica.com/topic/Loch-Ness-monster-legendary-creature" target="blank">
+            this is a link to a website explaining more about the loch ness monster. </a>
+        <br>
+        <br>
+        <img src="https://cdn.britannica.com/02/196402-050-044E396D/Photograph-image-Loch-Ness-monster-surgeon-hoax-1934.jpg?w=300"
+            alt="the lock ness monster" width="500" height="300">
+        <br>
+        <br>
+    </div>
+    <!-- 3. Giants -->
+    <div class="creature-box" id="giants">
+        <h2>3. Giants</h2>
+        <br>
+        <br>
+        <p style="font-size: 25px;" p>
+        <p>Giants are a folklore found worldwide, many different countries refere to them in
+            their
+            own unique ways, for
+            <br>
+            example, in norse mythology, they are refered to as jotunns. In Scotland, there is a
+            mountain called arthurs
+            seat,
+            <br>
+            which has a myth of being that there was once a giant who sat on that mountain which
+            had
+            then transformed it
+            <br>
+            overtime, into a seat. Some people, however, think it was king arthur, who was
+            actually
+            a giant, was the one
+            <br>
+            who wore it down into a seat. It is, however, a extinct 350 million year old
+            volcano.
+        </p>
+        <br>
+        <br>
+        <a
+            href="https://medium.com/@sooryaprabha1111/in-the-realm-of-giants-a-glimpse-into-the-colossal-wonders-of-nature-483efccd4a4d">
+            this is a link which provides more information on giants
+        </a>
+        <br>
+        <br>
+        <img src="https://miro.medium.com/v2/resize:fit:896/format:webp/1*13tz43xIjPrMEM9m0J3bPg.jpeg" alt="a giant"
+            width="500" height="300">
+        <br>
+        <br>
+    </div>
+    <!-- 4. Djinns -->
+    <div class="creature-box" id="djinn">
+        <h2>4.A Djinn</h2>
+        <br>
+        <br>
+
+        <p style="font-size: 25px;" p>
+        <p>Djinns are a Arabic folk lore of spirits which possess free will and are
+            able to
+            shape
+            <br>
+            shift into humans and animals. In the western world, these are seen as
+            wish-granting spirits.
+            <br>
+            They are, however, evil, benevolent and mischievous.
+        </p>
+        <br>
+        <br>
+        <a href="https://www.thecollector.com/what-are-djinn/">
+            this is a link to a site explaining further about djinns.
+        </a>
+        <br>
+        <br>
+        <img src="https://cdn.thecollector.com/wp-content/uploads/2024/10/what-are-djinn.jpg?width=943&height=530&quality=100&dpr=2"
+            alt="Djinn" width="500" height="300">
+        <br>
+        <br>
+    </div>
+    <!-- 5. Hydra -->
+    <div class="creature-box" id="hydra">
+        <h2>5. The hydra</h2>
+        <br>
+        <br>
+        <p style="font-size: 25px;" p>
+        <p>The hydra is a serpentine like monster most known in Greek and Roman
+            <br>
+            mythology. Its known territory is also located in the same site as
+            the
+            <br>
+            myth of Danaides.
+        </p>
+        <br>
+        <br>
+        <a href="https://www.britannica.com/topic/Hydra-Greek-mythology">
+            This is a site which has a bit more information to describe what a
+            hydra
+            is.
+        </a>
+        <br>
+        <br>
+        <img src="https://static.wikia.nocookie.net/greek-myth933/images/9/99/Hydra.jpg/revision/latest/scale-to-width-down/1000?cb=20170804111143"
+            alt="Hydra" width="500" height="300">
+
+        <br>
+        <br>
+    </div>
+    <!-- Chimera -->
+    <div class="creature-box" id="chimera">
+        <h2>6. The Chimera</h2>
+        <br>
+        <br>
+        <p style="font-size: 25px;" p>
+        <p> The chimera is found within Greek mythology, which is a fire breathing hybrid
+            <br>
+            Lycia Asia Minor, made of differet animal parts. it is depicted as a lion with
+            <br>
+            a goat head coming out from its back. its tail also ends with a snakes head. Some
+            <br>
+            can come with dragons wings too. its known to be the offspring of Typhon and Echidna,
+            <br>
+            with siblings such as Cerberus amd the Learnaean Hydra.
+        </p>
+        <br>
+        <br>
+        <a href="https://www.theoi.com/Ther/Khimaira.html">
+            This is a link to a website going into more detail about the Chimera.
+        </a>
+        <br>
+        <br>
+        <img src="https://www.theoi.com/image/M14.3Khimaira.jpg">
+        <br>
+        <br>
+    </div>
+    <!-- Manticore -->
+    <div class="creature-box" id="manticore">
+        <h2>7. The Manticore</h2>
+        <br>
+        <br>
+        <p style="font-size: 25px;" p>
+        <p> The manticore is a legendary creature from Persian mythology, which it is similar to
+            <br>
+            to the sphynx, which is of Egyptian mythology, also appearing in european medievil arts.
+            <br>
+            It has a human face, the body of a lion and the tail of a scorpion, or, its tail is covered
+            <br>
+            in poisonous spikes sililar to porcupine quills. Some say it is able to fire off its spikes
+            <br>
+            like arrows, and it eats its victims whole, due to its three rows of teeth, it also leaves
+            <br>
+            no bones behind.
+        </p>
+        <br>
+        <br>
+        <a href="https://www.kentarchaeology.org.uk/records/rochester-bestiary-manticore">
+            This is a link which will take you to a website which goes into more detail about manticores.
+        </a>
+        <br>
+        <Br>
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Martigora_ca_1652_%2821203315%29.jpg/500px-Martigora_ca_1652_%2821203315%29.jpg">
+        <br>
+        <br>
+    </div>
+    <!-- Mermaid -->
+    <div class="creature-box" id="mermaid">
+        <h2>8. The Mermaid</h2>
+        <br>
+        <br>
+        <p style="font-size: 25px;" p>
+        <p> in folklore, the Mermaid is a aquatic creature with head and body of a human, and her lower
+            <br>
+            part is the tail of a fish. they appear in folklore worldwide, like Europe, Asia, and Africa.
+            <br>
+            They are associated with nujerous events on the seas, like storms, shipwrecks and drownings.
+            <br>
+            In some folklores, they can be benevolent or beneficient, bestowing boons on humans, or, it
+            <br>
+            can go as far as falling in love with a human. There are also mermen, but they are less spotted,
+            <br>
+            and less spoken about, however, they are known to coexist with mermaids too. They are often refered
+            <br>
+            to as merfolk.
+        </p>
+        <br>
+        <br>
+        <a href="https://ocean.si.edu/ocean-life/marine-mammals/mermaids-manatees-myth-and-reality">
+            this is a link give more information on mermaids, and also, the reality of what really exists.
+        </a>
+        <br>
+        <Br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyTThFnovinwEkGrV9nup4kRq7mz9sf4sM9A&s">
+        <br>
+        <br>
+    </div>
+    <!-- SeaSerpent -->
+    <div class="creature-box" id="seaserpent">
+        <h2>9. The Sea Serpent</h2>
+        <br>
+        <br>
+        <p style="font-size: 25px;" p>
+        <p>
+            The sea serpent is found in numerous mythologies all around the world. Some examples of names it is given
+            <br>
+            are Tiamat, Yam and Tannin, Leviathan and Rahab, Cetus, Echidna, Hydra and Scylla, Vritra and Surasa and
+            <br>
+            finally, Jormungandr. There was a supposed eye witness account given by Aristotle, about a man named Strabo
+            <br>
+            who remarks about the sighting of a dead sea creature by Poseidonius on the coast of the northern Levant.
+            <br>
+            Poseidonius sees a 30m corpse of a large fallen dragon, of which horse men on both sides, couldnt see one
+            <br>
+            another on either sides, and its scales were larger than an oblong shield. This creature was spotted between
+            <br>
+            130 and 51 BC.
+        </p>
+        <br>
+        <br>
+        <a href="https://www.ool.co.uk/blog/myths-of-the-sea-serpent/">
+            this link goes into more information on the sea serpent
+        </a>
+        <br>
+        <br>
+        <img src="https://cdn.britannica.com/03/154803-004-E50FCEBC.jpg">
+        <br>
+        <br>
+    </div>
+    <!-- Harpy -->
+    <div class="creature-box" id="harpy">
+        <h2>10. The Harpy</h2>
+        <br>
+        <br>
+        <p style="font-size: 25px;" p>
+        <p> Harpies are depicted as birds with the head of a maiden, they had pale faces and sharp claws on their legs.
+            <br>
+            Romans and Byzantines wrote, saying how ugly they looked, along with there being pottery art with haripes
+            <br>
+            featuring beautiful women with wings. One described them Harpies as human vultures. They are viewed
+            <br>
+            differently by other peoples, the Hesiod imagined them as winged fair maidens. the Aeschylus thought them to
+            be
+            <br>
+            ugly creatures with wings, and some writers noted that they carried on the stroies of harpies being the most
+            disgusting
+            <br>
+            monsters. Thhe Pythian priestess of Apollo compared Erinyes to a harpy.
+        </p>
+        <br>
+        <br>
+        <a href="https://www.theoi.com/Pontios/Harpyiai.html">
+            this site goes more indepth into harpies and gives a few names of some
+        </a>
+        <br>
+        <Br>
+        <img
+            src="data:image/jpeg;base64,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">
+        <br>
+        <br>
+    </div>
+
+    <button id="topBtn" class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        /* This fuction toggles the "show" class on and off when you click */
+        function toggleMenu() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.classList.toggle("show");
+        }
+
+        const themeBtn = document.getElementById('theme-toggle');
+
+        themeBtn.onclick = function () {
+            document.body.classList.toggle('dark-mode');
+            themeBtn.innerHTML = document.body.classList.contains('dark-mode') ? "☀️ Light Mode" : "🌙 Dark Mode";
+
+        }
+
+        function showCreature(id) {
+            document.getElementById('home-page').style.display = 'none';
+
+            var boxes = document.getElementsByClassName('creature-box');
+            for (var i = 0; i < boxes.length; i++) {
+                boxes[i].style.display = 'none';
+            }
+
+            var target = document.getElementById(id);
+            if (target) {
+                target.style.display = 'block';
+            }
+
+            document.getElementById("myDropdown").classList.remove("show");
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Get the button
+        let topBtn = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        // When the user clicks on the button, scroll to the top of the document smoothly
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var menu = document.getElementById("myDropdown");
+                if (menu.classList.contains('show')) {
+                    menu.classList, remove('show');
+                }
+
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
