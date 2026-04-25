@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="ShRQPkURV8K9BgotaKM9">
+    <mxGraphModel dx="964" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-2" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hLI5_6ZnEr6oACk-JnGa-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-4" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hLI5_6ZnEr6oACk-JnGa-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-6" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;" target="hLI5_6ZnEr6oACk-JnGa-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="240" />
+            </Array>
+            <mxPoint x="590" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-8" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hLI5_6ZnEr6oACk-JnGa-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-10" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hLI5_6ZnEr6oACk-JnGa-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Website" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Light and Dark mode" vertex="1">
+          <mxGeometry height="80" width="120" x="600" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="back to top button for faster scroll" vertex="1">
+          <mxGeometry height="70" width="120" x="600" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-12" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hLI5_6ZnEr6oACk-JnGa-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Table of contents" vertex="1">
+          <mxGeometry height="80" width="120" x="120" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="home page with a description on what the website is all about" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-14" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hLI5_6ZnEr6oACk-JnGa-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-18" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hLI5_6ZnEr6oACk-JnGa-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="mythical creatures" vertex="1">
+          <mxGeometry height="80" width="120" x="120" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-16" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="510" />
+              <mxPoint x="220" y="510" />
+            </Array>
+            <mxPoint x="220" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="creature with information, a picture of the creature and a link to view more information." vertex="1">
+          <mxGeometry height="80" width="120" x="120" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-20" edge="1" parent="1" source="hLI5_6ZnEr6oACk-JnGa-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="hLI5_6ZnEr6oACk-JnGa-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hLI5_6ZnEr6oACk-JnGa-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="you can go back to the home page from the creature page using the dropdown contents button" vertex="1">
+          <mxGeometry height="80" width="120" x="260" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
